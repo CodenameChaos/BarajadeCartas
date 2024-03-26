@@ -8,6 +8,7 @@ import java.util.List;
  * @author Falivene
  */
 public class Baraja {
+
     private List<Carta> cartas;
 
     public Baraja() {
@@ -26,8 +27,16 @@ public class Baraja {
             }
         }
     }
- public void barajar(){
-     Collections.shuffle(cartas);
- }
- 
+
+    public void barajar() {
+        Collections.shuffle(cartas);
+    }
+    public void verBaraja(){
+        for (int i = 0; i < cartas.size(); i++) {
+                System.out.print(" " + cartas.get(i));
+            
+            System.out.println(" ");
+        }
+    }
+
 }
